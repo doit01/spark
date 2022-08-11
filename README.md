@@ -3,6 +3,7 @@ Spark Streaming 主要用于快速构建可扩展，高吞吐量，高容错的�
 
 如果从kafka读数据的话可以用 kafka stream 。 spring cloud stream 来实现。
 
+https://blog.csdn.net/weixin_45462732/article/details/125084075
 
 
 
