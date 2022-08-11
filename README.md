@@ -1,4 +1,10 @@
-# Apache Spark
+Spark Streaming
+Spark Streaming 主要用于快速构建可扩展，高吞吐量，高容错的流处理程序。支持从 HDFS，Flume，Kafka，Twitter 和 ZeroMQ 读取数据，并进行处理。
+
+如果从kafka读数据的话可以用 kafka stream 。 spring cloud stream 来实现。
+
+
+
 
 Spark is a unified analytics engine for large-scale data processing. It provides
 high-level APIs in Scala, Java, Python, and R, and an optimized engine that
