@@ -1,4 +1,16 @@
 Spark Streaming
+Spark Streaming共有三种运用场景
+1 无状态操作   当前新生成的小批次数据，所有计算都只是基于这个批次的数据进行处理 
+如 一个批次在一天时间内生成的数据，算一天的贷款额度，或者1min的贷款额度。
+
+2 状态操作    关注多个RDD从头到尾累加起来，每个RDD中的某个值进行累加 。总的贷款额度
+
+3  window操作
+一个窗口DStream（windowed DStream），窗口操作需要设置两个参数：
+（1）窗口长度（window length），即窗口的持续时间，上图中的窗口长度为3
+（2）滑动间隔（sliding interval），窗口操作执行的时间间隔，上图中的滑动间隔为2
+
+
 Spark Streaming 主要用于快速构建可扩展，高吞吐量，高容错的流处理程序。支持从 HDFS，Flume，Kafka，Twitter 和 ZeroMQ 读取数据，并进行处理。
 
 如果从kafka读数据的话可以用 kafka stream 。 spring cloud stream 来实现。
